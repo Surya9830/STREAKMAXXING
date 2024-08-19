@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya | Home</title>
+    <link rel="shortcut icon" href="Data/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+
+ 
+
+
+    
+   <div class="header">
+    <nav>
+        <h1></h1> 
+        <ul class="nav-links">
+            <li>
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="#">In Developement :)</a>
+                
+            </li>
+        </ul>
+    </nav>
+
+   </div>
+
+   <div class="Txt">
+    <h2 class="txt1"></h2>
+   </div>
+
+   <div class="datef">
+    <p class="llp">TODAY IS</p>
+    <p id="day" class="date"></p>
+    <h2 id="current-time"></h2>
+
+</div>
+
+
+<script>
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const today = new Date();
+    const dayIndex = today.getDay();
+    document.getElementById("day").textContent = days[dayIndex];
+</script>
+
+<script>
+    let time = document.getElementById("current-time");
+    setInterval(()=> {let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();},1000)
+ 
+</script>
+ 
+
+<div class="sct">
+        <a href="https://www.youtube.com" target="_blank"><img src="Data/yt1.png" height="30px"
+            width="45px" alt=""></a>
+
+    <a href="https://www.gmail.com" target="_blank"><img src="Data/gm.png" height="30px"
+        width="45px"  alt=""></a>        
+
+
+
+</div>
+
+
+<div class="quotes">
+
+<p class="L">Quote of The Day</p>
+<p class="M">"Never give up!"</p>
+
+</div>
+
+
+
+<footer class="f">
+    <p>Made Sincerely By Surya :)
+    </p>
+    <p>2024 Copyrights Reserved</p>
+</footer>
+        
+    
+</body>
+</html>

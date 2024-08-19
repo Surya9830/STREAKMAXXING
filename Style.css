@@ -1,0 +1,186 @@
+.header{ background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    border-radius: 3%;
+    
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.686);
+    background-image: url(Data/bg.jpg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+
+h1{
+    color: rgba(255, 77, 0, 0.856);
+    font-family: Archivo
+    ;
+    letter-spacing: 0px;
+    font-size: 35px;
+    margin: 10px;
+
+    padding-left: 20px;
+}
+
+.nav-links{
+    padding-right: 20px;
+    
+}
+
+.nav-links li{
+    display: inline-block;
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    padding: 11px;
+    color: orangered;
+    font-family: roboto;
+    font-weight: 800;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: rgb(225, 255, 0);
+    width: 0%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: width 0.8s ;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+    
+}
+
+
+h1::after{
+    color: 0%;
+}
+
+h1:hover{
+    color: rgb(238, 255, 1);
+    transition: color 0.5s ;
+    position: relative;
+}
+
+
+.txt1{
+    color: orangered;
+    font-family: roboto;
+    text-align: center;
+
+}
+
+
+.datef{
+
+    font-family: Archivo;
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
+    font-weight: bold;
+    line-height: 0px;
+    padding-top: 0px;
+
+
+    
+}
+
+#day{
+    padding-right: 610px;
+    font-size: 55px;
+    font-style: italic;
+}
+
+
+.llp{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+
+#current-time{
+    padding-left: 2px;
+}
+
+
+.sct{
+    display: flex;
+}
+
+
+.sct li{
+    display: flexbox ;
+}
+
+
+
+.sct a{
+    padding-right: 13px;
+    padding-left: 28px;
+    padding-top: 10px;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+
+
+.quotes{
+    font-family: archivo;
+    color: rgb(168 233 15);
+    line-height: 2px;
+}
+
+
+.L{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+
+}
+
+
+.M{
+
+font-size: 80px;
+text-align: center;
+padding-top: 0px;
+
+}
+
+
+
+
+
+
+.f{
+    font-family: archivo;
+    color: rgb(168 233 15);
+
+    padding-top: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
