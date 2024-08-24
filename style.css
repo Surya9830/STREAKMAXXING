@@ -100,7 +100,7 @@ button a{
 /* Hover effect */
 .hover-image:hover {
     filter: brightness(1.2); /* Brightens the image */
-    content: url('imagehover.png');
+    content: url('Data/imagehover.png');
 }
 
 
