@@ -35,14 +35,27 @@ li{
 
 button{
     background-color: rgb(255, 255, 255);
+    color: #25D366;
     margin-left: 10px; width: 100px; height:40px; border-radius: 9px;
     border: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+
+
+
+button:hover {
+    background-color: #25D366; /* New background color on hover */
+    color: #000000; /* New text color on hover */
+}
+
+
+
 
 button a{
     color: rgb(0, 0, 0); font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(209, 209, 209, 0);
 }
 
 
@@ -72,4 +85,45 @@ button a{
     color: rgb(255, 255, 255);
     margin-top: 420px;
     text-align: center;
+}
+
+
+
+
+
+.hover-image {
+    width: 50px;
+    height: 50px;
+    transition: 0.6s ease-in-out, filter 0.3s ease; /* Smooth transition for transform and filter */
+}
+
+/* Hover effect */
+.hover-image:hover {
+    filter: brightness(1.2); /* Brightens the image */
+    content: url('imagehover.png');
+}
+
+
+.maindiv{
+
+    transition: 0.8s ease-in-out;
+
+}
+
+
+.maindiv:hover{
+
+    color: #ff0000;
+}
+
+.logotext{
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+.logotext:hover{
+
+    color: rgb(212, 209, 168);
 }
